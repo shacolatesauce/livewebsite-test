@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Business Website</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .container {
+      background: white;
+      border-radius: 20px;
+      padding: 60px 40px;
+      max-width: 800px;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 3rem;
+      color: #2d3748;
+      margin-bottom: 20px;
+      font-weight: 700;
+    }
+
+    .subtitle {
+      font-size: 1.5rem;
+      color: #4a5568;
+      margin-bottom: 40px;
+      font-weight: 300;
+    }
+
+    .content {
+      color: #4a5568;
+      font-size: 1.1rem;
+      line-height: 1.8;
+      margin: 30px 0;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 30px;
+      margin-top: 50px;
+    }
+
+    .feature {
+      padding: 30px;
+      background: #f7fafc;
+      border-radius: 15px;
+      transition: transform 0.3s ease;
+    }
+
+    .feature:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .feature-icon {
+      font-size: 3rem;
+      margin-bottom: 15px;
+    }
+
+    .feature-title {
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: #2d3748;
+      margin-bottom: 10px;
+    }
+
+    .feature-desc {
+      color: #718096;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 768px) {
+      h1 { font-size: 2rem; }
+      .subtitle { font-size: 1.2rem; }
+      .container { padding: 40px 20px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🏢 Welcome to Our Business</h1>
+    <p class="subtitle">Your trusted partner for excellence</p>
+
+    <div class="content">
+      <p>
+        This is a sample business website. Replace this content with your actual website content.
+        The Officaid chat widget will appear in the bottom-right corner.
+      </p>
+    </div>
+
+    <div class="features">
+      <div class="feature">
+        <div class="feature-icon">✨</div>
+        <div class="feature-title">Our Service 1</div>
+        <div class="feature-desc">Description of your first service</div>
+      </div>
+
+      <div class="feature">
+        <div class="feature-icon">🎯</div>
+        <div class="feature-title">Our Service 2</div>
+        <div class="feature-desc">Description of your second service</div>
+      </div>
+
+      <div class="feature">
+        <div class="feature-icon">💼</div>
+        <div class="feature-title">Our Service 3</div>
+        <div class="feature-desc">Description of your third service</div>
+      </div>
+
+      <div class="feature">
+        <div class="feature-icon">🚀</div>
+        <div class="feature-title">Our Service 4</div>
+        <div class="feature-desc">Description of your fourth service</div>
+      </div>
+    </div>
+  </div>
+
+
+
+ <script src="http://localhost:3000/widget/widget.js"
+        data-agent-id="default"
+        data-widget-config-id="1"
+        data-position="bottom-right"
+        data-color="#9b42d7"
+        data-greeting="Hi! Welcome to Argus! I'm Maya. How can I help you?"
+        data-bot-name="Maya"
+        data-description=""
+        data-footer="Powered by Argus"
+        data-avatar="https://ssclbouuyjbxnezyhzpj.supabase.co/storage/v1/object/public/widget-avatars/1_2b1a9b10fa384529a7dec93012d0f78c.png">
+</script>
+
+
+  <!-- PASTE EMBED CODE BELOW THIS LINE -->
+
+
+
+  <!-- PASTE EMBED CODE ABOVE THIS LINE -->
+
+</body>
+</html>
