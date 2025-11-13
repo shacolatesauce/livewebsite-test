@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Business Website</title>
+  <title>Professional Business Solutions</title>
   <style>
     * {
       margin: 0;
@@ -12,125 +12,172 @@
     }
 
     body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
       min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 20px;
+      padding: 40px 20px;
     }
 
-    .container {
-      background: white;
-      border-radius: 20px;
-      padding: 60px 40px;
-      max-width: 800px;
-      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    .hero {
       text-align: center;
+      padding: 80px 20px 60px;
+      max-width: 1200px;
+      margin: 0 auto;
     }
 
     h1 {
-      font-size: 3rem;
-      color: #2d3748;
+      font-size: 3.5rem;
+      color: #ffffff;
       margin-bottom: 20px;
-      font-weight: 700;
+      font-weight: 800;
+      letter-spacing: -1px;
     }
 
     .subtitle {
-      font-size: 1.5rem;
-      color: #4a5568;
-      margin-bottom: 40px;
-      font-weight: 300;
+      font-size: 1.3rem;
+      color: #a0d2eb;
+      margin-bottom: 30px;
+      font-weight: 400;
+      line-height: 1.6;
     }
 
-    .content {
-      color: #4a5568;
+    .cta-button {
+      display: inline-block;
+      padding: 16px 40px;
+      background: linear-gradient(135deg, #00b4db 0%, #0083b0 100%);
+      color: white;
+      text-decoration: none;
+      border-radius: 50px;
+      font-weight: 600;
       font-size: 1.1rem;
-      line-height: 1.8;
-      margin: 30px 0;
+      transition: all 0.3s ease;
+      box-shadow: 0 8px 20px rgba(0, 180, 219, 0.3);
+    }
+
+    .cta-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 30px rgba(0, 180, 219, 0.4);
     }
 
     .features {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 30px;
-      margin-top: 50px;
+      max-width: 1200px;
+      margin: 60px auto;
+      padding: 0 20px;
     }
 
     .feature {
-      padding: 30px;
-      background: #f7fafc;
-      border-radius: 15px;
-      transition: transform 0.3s ease;
+      background: rgba(255, 255, 255, 0.95);
+      padding: 40px 30px;
+      border-radius: 20px;
+      transition: all 0.3s ease;
+      border: 1px solid rgba(255, 255, 255, 0.1);
     }
 
     .feature:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      transform: translateY(-8px);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+      background: rgba(255, 255, 255, 1);
     }
 
     .feature-icon {
-      font-size: 3rem;
-      margin-bottom: 15px;
+      width: 70px;
+      height: 70px;
+      background: linear-gradient(135deg, #00b4db 0%, #0083b0 100%);
+      border-radius: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      margin-bottom: 20px;
     }
 
     .feature-title {
-      font-size: 1.2rem;
-      font-weight: 600;
-      color: #2d3748;
-      margin-bottom: 10px;
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: #1a1a1a;
+      margin-bottom: 12px;
     }
 
     .feature-desc {
-      color: #718096;
-      font-size: 0.95rem;
+      color: #666;
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    .info-section {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 50px;
+      background: rgba(255, 255, 255, 0.95);
+      border-radius: 20px;
+      text-align: center;
+    }
+
+    .info-section h2 {
+      font-size: 2.2rem;
+      color: #1a1a1a;
+      margin-bottom: 20px;
+      font-weight: 700;
+    }
+
+    .info-section p {
+      color: #555;
+      font-size: 1.1rem;
+      line-height: 1.8;
     }
 
     @media (max-width: 768px) {
-      h1 { font-size: 2rem; }
-      .subtitle { font-size: 1.2rem; }
-      .container { padding: 40px 20px; }
+      h1 { font-size: 2.5rem; }
+      .subtitle { font-size: 1.1rem; }
+      .features { grid-template-columns: 1fr; }
+      .info-section { padding: 30px 20px; }
+      .info-section h2 { font-size: 1.8rem; }
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>🏢 Welcome to Our Business</h1>
-    <p class="subtitle">Your trusted partner for excellence</p>
+  <div class="hero">
+    <h1>Transform Your Business</h1>
+    <p class="subtitle">Innovative solutions designed to help your business grow and succeed in the digital age</p>
+    <a href="#" class="cta-button">Get Started Today</a>
+  </div>
 
-    <div class="content">
-      <p>
-        This is a sample business website. Replace this content with your actual website content.
-        The Officaid chat widget will appear in the bottom-right corner.
-      </p>
+  <div class="features">
+    <div class="feature">
+      <div class="feature-icon">⚡</div>
+      <div class="feature-title">Lightning Fast</div>
+      <div class="feature-desc">Experience blazing fast performance with our optimized solutions built for speed and efficiency</div>
     </div>
 
-    <div class="features">
-      <div class="feature">
-        <div class="feature-icon">✨</div>
-        <div class="feature-title">Our Service 1</div>
-        <div class="feature-desc">Description of your first service</div>
-      </div>
-
-      <div class="feature">
-        <div class="feature-icon">🎯</div>
-        <div class="feature-title">Our Service 2</div>
-        <div class="feature-desc">Description of your second service</div>
-      </div>
-
-      <div class="feature">
-        <div class="feature-icon">💼</div>
-        <div class="feature-title">Our Service 3</div>
-        <div class="feature-desc">Description of your third service</div>
-      </div>
-
-      <div class="feature">
-        <div class="feature-icon">🚀</div>
-        <div class="feature-title">Our Service 4</div>
-        <div class="feature-desc">Description of your fourth service</div>
-      </div>
+    <div class="feature">
+      <div class="feature-icon">🛡️</div>
+      <div class="feature-title">Secure & Reliable</div>
+      <div class="feature-desc">Enterprise-grade security protocols to keep your data safe and your operations running smoothly</div>
     </div>
+
+    <div class="feature">
+      <div class="feature-icon">📊</div>
+      <div class="feature-title">Data Insights</div>
+      <div class="feature-desc">Make informed decisions with powerful analytics and real-time reporting capabilities</div>
+    </div>
+
+    <div class="feature">
+      <div class="feature-icon">🌐</div>
+      <div class="feature-title">Global Reach</div>
+      <div class="feature-desc">Scale your business worldwide with our international infrastructure and support</div>
+    </div>
+  </div>
+
+  <div class="info-section">
+    <h2>Why Choose Us?</h2>
+    <p>
+      We provide cutting-edge business solutions tailored to your unique needs.
+      Our team of experts is dedicated to helping you achieve your goals with innovative
+      technology and exceptional support. Try our chat widget below to get in touch!
+    </p>
   </div>
 
 
